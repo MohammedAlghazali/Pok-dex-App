@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/images/pikachu.svg"
+      sizes="any"
+      type="image/svg+xml"
+    />
+    <!--Import Google Raleway Font-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap"
+      rel="stylesheet"
+    />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokédex App</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="logo">
+        <img src="/images/pikachu.svg" alt="" title="logo" />
+      </div>
+      <div class="navigation">
+        <a href="#Pokemons"><span>Discover More Pokemons</span></a>
+      </div>
+    </header>
+    <main>
+      <header class="pokemons-header">
+        <div>
+          Seen: <span class="seen">0</span> | Caught:
+          <span class="caught">0</span>
+        </div>
+        <div class="search" id="Pokemons">
+          <div class="row">
+            <div class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">search</i>
+                  <input
+                    type="text"
+                    id="autocomplete-input"
+                    class="autocomplete"
+                  />
+                  <label for="autocomplete-input">search</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="loader" class="loader"></div>
+    </main>
+    <section class="modal-wrapper"></section>
+    <footer class="page-footer">
+      <div>
+        Copyright &copy;2021 | Designed by <strong>Mohammed Alghazali</strong>
+      </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/dom.js"></script>
+  </body>
+</html>

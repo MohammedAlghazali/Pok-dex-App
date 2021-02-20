@@ -1,0 +1,252 @@
+* {
+  font-family: "Raleway", Times, serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: #00796b;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+}
+
+.navigation {
+  text-align: center;
+  flex: 1;
+}
+
+.navigation a {
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.navigation a span {
+  border-bottom: 1px solid;
+}
+
+.search .input-field {
+  margin-bottom: 0;
+}
+
+main {
+  min-height: 800px;
+}
+
+.pokemons-header > div:first-of-type {
+  padding: 10px;
+  background: #66fcf1;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.pokemons-header > div:first-of-type span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.Pokemons {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.Pokemon {
+  border: 40px solid #26a69a;
+  padding: 15px 0;
+}
+
+.Pokemon__actions button {
+  border: none;
+  background-color: white;
+  margin: 0 10%;
+}
+
+.Pokemon__actions i {
+  font-weight: bold;
+}
+
+.Pokemon__image img {
+  min-width: 96px;
+  min-height: 96px;
+  max-width: 96px;
+  max-height: 96px;
+}
+
+.Pokemon__name {
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0;
+  background-color: #00796b;
+}
+
+.modal {
+  max-height: 80%;
+}
+
+.modal-content .header {
+  display: flex;
+  border-bottom: 1px solid #26a69a;
+}
+
+.modal-content .header .types {
+  width: 70%;
+}
+
+.modal-content .header .types h4 {
+  margin-bottom: 0;
+}
+
+.modal-content .header .types span {
+  display: inline-block;
+  border: 1px solid #26a69a;
+  padding: 5px 20px 5px;
+  margin: 20px 10px;
+}
+
+.modal-content .header .types span:first-of-type {
+  margin-left: 20px;
+}
+
+.modal-content > section:nth-child(2) {
+  border-bottom: 1px solid #26a69a;
+}
+
+.details-image-container {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  max-height: 96px;
+  border-right: 1px solid #26a69a;
+}
+
+.details-image-container img {
+  max-width: 96px;
+}
+
+.details-image-container div {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  padding-right: 20px;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+}
+
+.progress-container:first-of-type {
+  margin-top: 10px;
+}
+
+.progress-container:last-of-type {
+  margin-bottom: 10px;
+}
+
+.state-title {
+  width: 20%;
+  text-align: left;
+}
+
+.progress {
+  margin: 10px auto;
+  padding: 0;
+  width: 80%;
+  height: 20px;
+  overflow: hidden;
+  background: #e5e5e5;
+  border-radius: 6px;
+}
+
+.bar {
+  position: relative;
+  float: left;
+  min-width: 1%;
+  height: 100%;
+  background: #26a69a;
+}
+
+.percent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-family: tahoma, arial, helvetica;
+  font-size: 12px;
+  color: white;
+}
+
+.moves-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.moves-container li {
+  width: 20%;
+  min-width: 120px;
+  text-align: left;
+  list-style: circle;
+}
+
+ul.moves-container:not(.browser-default) > li {
+  list-style: circle;
+  list-style-position: inside;
+}
+
+.row {
+  max-width: 940px;
+}
+
+.card .card-content {
+  padding-top: 15px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #26a69a;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 45%;
+  left: 45%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hide-loader {
+  display: none;
+}
